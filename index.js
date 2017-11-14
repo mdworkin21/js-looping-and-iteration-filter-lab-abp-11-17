@@ -28,8 +28,10 @@ function fuzzyMatch(drivers, name){
 
 
 function matchName(drivers, name){
-  let match = drivers.filter(function(driver){
+  return drivers.filter(function(driver){
+      return driver.name.toLowerCase() === name.toLowerCase()}}
 
+/*
     for (const driver in drivers){//now in the array, elements in array are objects, need to go into objects
 
        for(const i in driver){//this gets us into the objects, and should return the values//but current problem is returning empty[]
@@ -48,4 +50,4 @@ function matchName(drivers, name){
 
   })
   return match
-}
+}*/
